@@ -1,0 +1,22 @@
+#bdy{
+    background-color: #FBB500;
+}
+
+#burgericon{
+    height: 150px;
+    width: 150px;
+    float: left;
+}
+
+#head{
+    font-size: 60px;
+    float: right;
+    font-family:"Rock Salt", cursive;
+    text-shadow: black 4px 4px 7px;
+
+}
+
+.card-title{
+    font-family:"Ribeye", serif;
+    font-size: 39px;
+}
