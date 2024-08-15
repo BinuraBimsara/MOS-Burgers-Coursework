@@ -16,19 +16,3 @@ function openTab(evt, tabName) {
     evt.currentTarget.className += " active";
 }
 
-// Open the first tab by default
-document.addEventListener("DOMContentLoaded", function () {
-    document.querySelector('.tab button').click();
-});
-
-const scrollRevealOption = {
-    distance: "50px",
-    origin: "bottom",
-    duration: 1000,
-};
-
-
-ScrollReveal().reveal(".body", {
-    ...scrollRevealOption,
-    interval: 500,
-})
