@@ -1,22 +1,123 @@
-#bdy{
+#bdy {
     background-color: #FBB500;
 }
 
-#burgericon{
+#burgericon {
     height: 150px;
     width: 150px;
     float: left;
 }
 
-#head{
+#head {
     font-size: 60px;
     float: right;
-    font-family:"Rock Salt", cursive;
+    font-family: "Rock Salt", cursive;
     text-shadow: black 4px 4px 7px;
 
 }
 
-.card-title{
-    font-family:"Ribeye", serif;
+.card-title {
+    font-family: "Ribeye", serif;
     font-size: 39px;
+}
+
+
+/* ===========================ORDERS PAGE=========================== */
+
+#fill {
+    background-color: #34C759;
+    border-radius: 30px;
+    font-family: poppins;
+    font-size: 20px;
+
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    border-radius: 5px;
+    background-color: rgba(26, 26, 26, 0.849);
+    ;
+    position: absolute;
+    left: 15px;
+    bottom: 8px;
+    transition: 0.3s;
+}
+
+.nav-link:hover::after {
+    width: 80%;
+}
+
+.nav-link:hover {
+    transition: 0.4s;
+    background-color: #FBB500;
+}
+
+.nav-link:active {
+    background-color: brown;
+
+}
+
+#homeIco {
+    color: black;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 30px;
+}
+
+#Content {
+    margin-top: 30px;
+}
+
+.card.content {
+    margin-top: 30px;
+    background-color: #ffffff;
+}
+
+.card.content:hover {
+    transform: translateY(-20px);
+    transition: 0.3s;
+}
+
+.card.card.content:hover {
+    transform: translateY(-10px);
+    transition: 0.3s;
+
+}
+
+.row.cart:hover {
+    cursor: pointer;
+}
+
+/* ===============================NAVBAR TABS==============================================================NAVBAR TABS=============================== */
+
+.tabcontent.active {
+    display: block;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+    animation: fade 1.5s ease;
+
+}
+
+.tabcontent h3 {
+    margin-top: 0;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
